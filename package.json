@@ -1,0 +1,56 @@
+{
+  "name": "@mrtdmrmrt/vue-banner-library",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name dg ./src/components/index.js",
+    "test": "vue-cli-service test",
+    "e2e": "vue-cli-service e2e",
+    "lint": "vue-cli-service lint",
+    "e2e:open": "vue-cli-service e2e:open"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "main" : "./dist/dg.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
